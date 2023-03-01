@@ -23,7 +23,7 @@ sys.path.append(
 )
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger.addHandler(logging.NullHandler())
 
 class BaseGa4mp(object):
     """
